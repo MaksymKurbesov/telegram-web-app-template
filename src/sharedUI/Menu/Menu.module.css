@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    /*height: 100px;*/
+}
+
+.menu li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    line-height: 1;
+}
+
+.menu li a i {
+    font-size: 18px;
+}

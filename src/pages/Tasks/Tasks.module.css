@@ -1,0 +1,54 @@
+.user-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.id {
+    opacity: 0.5;
+    font-size: 14px;
+}
+
+
+.title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    /*height: 50px;*/
+    background: linear-gradient(90deg, rgba(20, 20, 20, 0.1) 0%, rgb(36, 36, 36) 100%);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+}
+
+
+.task-icon {
+    margin-right: 10px;
+}
+
+.arrow-icon {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.daily-bonus {
+    margin-bottom: 20px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.basic-tasks, .advanced-tasks {
+    margin-bottom: 15px;
+}
