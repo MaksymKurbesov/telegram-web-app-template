@@ -1,3 +1,8 @@
+.tasks-wrapper {
+    padding: 20px 10px;
+    padding-bottom: 75px;
+}
+
 .user-info {
     display: flex;
     flex-direction: column;
@@ -46,7 +51,7 @@
 .tasks {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 6px;
 }
 
 .basic-tasks, .advanced-tasks {

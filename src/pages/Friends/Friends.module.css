@@ -1,0 +1,83 @@
+.friends-wrapper {
+    padding: 20px 10px;
+    padding-bottom: 75px;
+}
+
+.invite-friend-wrapper {
+    background: #282828;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.invite-friend-title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.invite-friend-subtitle {
+    font-size: 14px;
+    color: rgba(0, 255, 134, 0.9);
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    border-radius: 8px;
+}
+
+.invite-button {
+    flex-grow: 1;
+}
+
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.friends-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.invited {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.invited span {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 3px 13px;
+    border-radius: 25px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.friends-list li {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+.friend-avatar {
+    margin-right: 10px;
+}
+
+.friend-info {
+    font-size: 12px;
+}
+
+.coin-reward {
+    margin-left: auto;
+}

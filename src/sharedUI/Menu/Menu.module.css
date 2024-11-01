@@ -1,19 +1,36 @@
 .menu {
     display: flex;
-    justify-content: center;
-    gap: 35px;
+    justify-content: space-between;
+    font-weight: 600;
     /*height: 100px;*/
+}
+
+.menu li {
+    width: 45px;
+    height: 45px;
 }
 
 .menu li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 5px;
-    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
     line-height: 1;
+    padding: 7px;
+    border-radius: 10px;
+    opacity: 0.4;
+    transition: 0.35s ease all;
 }
 
 .menu li a i {
-    font-size: 18px;
+    font-size: 17px;
+}
+
+.active {
+    background: rgba(255, 255, 255, 0.15);
+    opacity: 1 !important;
 }

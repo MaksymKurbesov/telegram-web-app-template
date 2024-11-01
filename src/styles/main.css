@@ -1,9 +1,28 @@
 @import url('/font-awesome/css/all.css');
 
+@font-face {
+    font-family: "Averta";
+    font-weight: 600;
+    src: url("/fonts/averta-extrabold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Averta";
+    font-weight: 500;
+    src: url("/fonts/averta-semibold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Averta";
+    font-weight: 400;
+    src: url("/fonts/averta-regular.woff2") format("woff2");
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Averta";
 }
 
 ul, ol {

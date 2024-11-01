@@ -4,47 +4,19 @@
     flex-direction: column;
 }
 
-.header {
-    /*display: flex;*/
-    /*position: relative;*/
-    /*align-items: center;*/
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 10px;
-}
 
-.user-info {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-    gap: 5px;
-    /*width: 35%;*/
-}
-
-.user-nickname {
-    display: inline-block;
-    font-size: 12px;
-    margin-bottom: 3px;
-}
-
-.progress {
-    width: 35%;
-}
-
-.progress p {
-    display: flex;
-    justify-content: space-between;
-    font-size: 12px;
-    margin-bottom: 5px;
+.main {
+    flex-grow: 1;
 }
 
 .content-wrapper {
-    padding: 20px 10px;
-    padding-bottom: 90px;
+    flex-grow: 1;
 }
+
 
 footer {
     width: 95%;
-    padding: 15px 0;
+    padding: 5px;
     position: fixed;
     bottom: 20px;
     border-radius: 15px;

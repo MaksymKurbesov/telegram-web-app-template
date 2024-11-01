@@ -1,0 +1,65 @@
+.top-wrapper {
+    padding: 20px 10px;
+    padding-bottom: 85px;
+    padding-top: 50px;
+}
+
+
+.main-image {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.top-players-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-players-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.top-players-list li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    background: rgb(59, 59, 59);
+}
+
+.top-players-list li:nth-child(1) {
+    background: linear-gradient(45deg, #fab030, rgba(168, 120, 29, 0.2));
+}
+
+.top-players-list li:nth-child(2) {
+    background: linear-gradient(45deg, #9b9b9b, rgba(189, 189, 189, 0.2));
+}
+
+.top-players-list li:nth-child(3) {
+    background: linear-gradient(45deg, #b06226, rgba(176, 98, 38, 0.2));
+}
+
+.list-number {
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.user-avatar {
+    margin-right: 15px;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user-points {
+    font-size: 10px;
+}
