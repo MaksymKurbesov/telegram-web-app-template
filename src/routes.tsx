@@ -4,6 +4,7 @@ import App from "./App";
 import Tasks from "./pages/Tasks/Tasks";
 import Top from "./pages/Top/Top.tsx";
 import Friends from "./pages/Friends/Friends.tsx";
+import Wallet from "./pages/Wallet/Wallet.tsx";
 
 const routes = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const routes = createBrowserRouter([
       {
         path: "/friends",
         element: <Friends />,
+      },
+      {
+        path: "/wallet",
+        element: <Wallet />,
       },
     ],
   },

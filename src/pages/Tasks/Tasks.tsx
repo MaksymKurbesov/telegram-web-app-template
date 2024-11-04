@@ -39,7 +39,7 @@ const Tasks = () => {
         <div className={styles["tasks"]}>
           {TASKS.map((task) => {
             return (
-              <div className={styles["task"]}>
+              <div key={task.title} className={styles["task"]}>
                 <img
                   className={styles["task-icon"]}
                   src={task.icon}
@@ -65,7 +65,7 @@ const Tasks = () => {
         <div className={styles["tasks"]}>
           {TASKS.map((task) => {
             return (
-              <div className={styles["task"]}>
+              <div key={task.title} className={styles["task"]}>
                 <img
                   className={styles["task-icon"]}
                   src={task.icon}

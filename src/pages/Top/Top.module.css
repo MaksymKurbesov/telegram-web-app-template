@@ -5,17 +5,20 @@
 }
 
 
-.main-image {
-    display: block;
-    margin-bottom: 15px;
-    text-align: center;
-}
-
 .top-players-title {
     font-size: 24px;
     font-weight: 600;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
+}
+
+.top-players-subtitle {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    opacity: 0.5;
 }
 
 .top-players-list {
@@ -55,11 +58,18 @@
     margin-right: 15px;
 }
 
+.user-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .user-name {
     font-size: 15px;
     font-weight: 500;
 }
 
 .user-points {
-    font-size: 10px;
+    font-size: 12px;
+    margin-left: auto;
 }

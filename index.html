@@ -9,11 +9,12 @@
 </head>
 <body>
 <div id="root"></div>
-<script type="module" src="/src/main.tsx"></script>
 <script>
     console.log(window.Telegram, 'window.Telegram')
     window.Telegram.WebApp.expand();
     window.Telegram.WebApp.disableVerticalSwipes(true);
 </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/tgs-player.js"></script>
+<script type="module" src="/src/main.tsx"></script>
 </body>
 </html>
