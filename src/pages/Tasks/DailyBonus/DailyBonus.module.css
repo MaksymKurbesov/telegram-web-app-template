@@ -1,0 +1,36 @@
+.daily-bonus {
+    /*color: black;*/
+}
+
+.daily-bonus ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 7px;
+}
+
+.daily-bonus ul li {
+    padding: 10px 0;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.completed {
+    background: #1c7ed6;
+}
+
+.active {
+    border: 1px solid #1c7ed6 !important;
+}
+
+.claim-button {
+    width: 100%;
+    position: sticky;
+    /*left: 50%;*/
+    bottom: 20px;
+    /*transform: translateX(-50%);*/
+}

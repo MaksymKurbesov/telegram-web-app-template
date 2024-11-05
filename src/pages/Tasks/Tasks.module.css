@@ -32,6 +32,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 1;
+    cursor: pointer;
 }
 
 
@@ -42,6 +43,14 @@
 .arrow-icon {
     margin-left: auto;
     margin-right: 10px;
+}
+
+.reward-points {
+    font-size: 11px;
+    font-weight: 500;
+    opacity: 0.4;
+    margin-top: 4px;
+    display: inline-block;
 }
 
 .daily-bonus {
@@ -56,4 +65,33 @@
 
 .basic-tasks, .advanced-tasks {
     margin-bottom: 15px;
+}
+
+.loader {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid #FFF;
+    border-right: 3px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.drawer {
+    background: red;
+}
+
+.drawer h2 {
+    font-weight: 500 !important;
+    font-size: 20px;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }

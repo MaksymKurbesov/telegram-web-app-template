@@ -1,6 +1,6 @@
 import { Avatar } from "@mantine/core";
 import styles from "./Top.module.css";
-import trophyAnimation from "../../assets/lottie/trophy.tgs";
+import topAnimation from "../../assets/lottie/top.tgs";
 
 const Top = () => {
   return (
@@ -10,7 +10,7 @@ const Top = () => {
         loop
         mode="normal"
         style={{ width: 150, height: 150, margin: "0 auto", marginBottom: 10 }}
-        src={trophyAnimation}
+        src={topAnimation}
       ></tgs-player>
       <p className={styles["top-players-title"]}>Top Players</p>
       <p className={styles["top-players-subtitle"]}>

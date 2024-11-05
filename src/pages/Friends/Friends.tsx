@@ -1,9 +1,17 @@
 import { Avatar, Button } from "@mantine/core";
 import styles from "./Friends.module.css";
+import helloAnimation from "../../assets/lottie/friends.tgs";
 
 const Friends = () => {
   return (
     <div className={styles["friends-wrapper"]}>
+      <tgs-player
+        autoplay
+        loop
+        mode="normal"
+        style={{ width: 150, height: 150, margin: "0 auto", marginBottom: 10 }}
+        src={helloAnimation}
+      ></tgs-player>
       <div className={styles["invite-friend-wrapper"]}>
         <p className={styles["invite-friend-title"]}>Invite a friend</p>
         <p className={styles["invite-friend-subtitle"]}>

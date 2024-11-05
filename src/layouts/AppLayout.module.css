@@ -10,6 +10,8 @@
 }
 
 .content-wrapper {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
 }
 
@@ -23,7 +25,6 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     margin-top: auto;
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
     background: #2e2e2e;
 }
 

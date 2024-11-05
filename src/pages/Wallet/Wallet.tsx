@@ -1,7 +1,7 @@
 import styles from "./Wallet.module.css";
 import TONIcon from "../../assets/icons/TON.svg";
 import { Button } from "@mantine/core";
-import introAnimation from "../../assets/lottie/intro.tgs";
+import moneyAnimation from "../../assets/lottie/money.tgs";
 
 const Wallet = () => {
   return (
@@ -12,7 +12,7 @@ const Wallet = () => {
         loop
         mode="normal"
         style={{ width: 150, height: 150, marginBottom: 45 }}
-        src={introAnimation}
+        src={moneyAnimation}
       ></tgs-player>
       <Button className={styles["connect-button"]}>
         <img src={TONIcon} alt={""} />
