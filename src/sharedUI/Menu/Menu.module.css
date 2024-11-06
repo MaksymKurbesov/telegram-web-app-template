@@ -2,8 +2,9 @@
     display: flex;
     justify-content: space-between;
     font-weight: 600;
-    /*height: 100px;*/
+    position: relative;
 }
+
 
 .menu li {
     width: 45px;

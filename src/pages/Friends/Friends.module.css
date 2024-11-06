@@ -3,6 +3,17 @@
     padding-bottom: 75px;
 }
 
+.invite-friends-title {
+    font-size: 24px;
+}
+
+.invite-friends-subtitle {
+    display: inline-block;
+    opacity: 0.5;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
 .invite-friend-wrapper {
     background: #282828;
     border-radius: 15px;
@@ -80,4 +91,29 @@
 
 .coin-reward {
     margin-left: auto;
+}
+
+.tabs-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    outline: 2px solid #228be6;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.tabs-list button {
+    width: 50%;
+}
+
+.tab {
+    padding: 14px 0;
+    font-weight: 500;
+}
+
+
+.tab:not([data-disabled]):hover {
+    /*color: black;*/
+    /*--tab-bg: rgba(0, 0, 0, 0);*/
 }

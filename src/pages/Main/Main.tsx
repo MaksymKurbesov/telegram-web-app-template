@@ -1,7 +1,16 @@
 import { Avatar, Progress } from "@mantine/core";
 import styles from "./Main.module.css";
+import useUserStore from "../../store/useUserStore.ts";
+import { userService } from "../../main.tsx";
 
 const Main = () => {
+  const { currentUser } = useUserStore();
+
+  const addPoints = () => {
+    console.log("work");
+    userService.addPoints(100);
+  };
+
   return (
     <>
       <header className={styles["header"]}>
@@ -20,10 +29,14 @@ const Main = () => {
         </div>
         <div className={styles["user-info"]}>
           <Avatar size={"sm"} src={null} />
-          <span className={styles["user-nickname"]}>Pachka</span>
+          <span className={styles["user-nickname"]}>
+            {currentUser.firstName}
+          </span>
         </div>
       </header>
-      <div className={styles["main"]}>main</div>
+      <div className={styles["main"]} onClick={addPoints}>
+        Points: {currentUser.points}
+      </div>
     </>
   );
 };

@@ -1,0 +1,2 @@
+export const REFERRAL_REWARD = 150;
+export const PREMIUM_REFERRAL_REWARD = 250;

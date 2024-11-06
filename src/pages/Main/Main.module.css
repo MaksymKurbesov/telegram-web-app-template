@@ -36,5 +36,10 @@
 }
 
 .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
+    font-size: 40px;
+    padding-bottom: 80px;
 }
