@@ -107,13 +107,13 @@
     width: 50%;
 }
 
+.tabs-list button:not([data-disabled]):hover {
+    background: #228be6;
+}
+
 .tab {
     padding: 14px 0;
     font-weight: 500;
 }
 
 
-.tab:not([data-disabled]):hover {
-    /*color: black;*/
-    /*--tab-bg: rgba(0, 0, 0, 0);*/
-}

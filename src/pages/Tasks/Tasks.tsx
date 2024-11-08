@@ -7,10 +7,9 @@ import XIcon from "../../assets/icons/x.svg";
 import YoutubeIcon from "../../assets/icons/youtube.svg";
 import ArrowIcon from "../../assets/icons/arrow.svg";
 import { useEffect, useState } from "react";
-import { taskService } from "../../main.tsx";
-import { ITask } from "../../api/Tasks.ts";
 import { useDisclosure } from "@mantine/hooks";
 import DailyBonus from "./DailyBonus/DailyBonus.tsx";
+import axios from "axios";
 
 const SITE_ICON_MAP = {
   instagram: InstagramIcon,
@@ -20,21 +19,26 @@ const SITE_ICON_MAP = {
 };
 
 const Tasks = () => {
-  const [tasks, setTasks] = useState<ITask[]>([]);
+  const [tasks, setTasks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [openedDailyBonus, { open, close }] = useDisclosure(false);
 
   useEffect(() => {
     const fetchTasks = async () => {
       setLoading(true);
-      const data = await taskService.getTasks();
-      setTasks(data);
+      axios
+        .get("http://localhost:5000/tasks")
+        .then((response) => {
+          setTasks(response.data);
+        })
+        .catch((error) => console.error("Error fetching data:", error))
+        .finally(() => setLoading(false))
     };
 
-    fetchTasks().then(() => {
-      setLoading(false);
-    });
+    fetchTasks()
+
   }, []);
+
 
   return (
     <div className={styles["tasks-wrapper"]}>

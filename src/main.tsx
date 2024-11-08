@@ -8,7 +8,6 @@ import routes from "./routes";
 import { RouterProvider } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
-import { TaskService } from "./api/Tasks.ts";
 import { UserService } from "./api/User.ts";
 
 const theme = createTheme({
@@ -36,7 +35,6 @@ const db = getFirestore(app);
 const UserID = window.Telegram.WebApp.initDataUnsafe.user?.id.toString();
 
 export const userService = new UserService(db, UserID);
-export const taskService = new TaskService(db);
 
 createRoot(document.getElementById("root")!).render(
   // <StrictMode>

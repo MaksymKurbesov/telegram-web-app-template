@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cross-env GOOGLE_APPLICATION_CREDENTIALS=./credentials.json nodemon index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
     "express": "^4.21.1",
-    "mongoose": "^8.7.2"
+    "firebase-admin": "^12.7.0",
+    "mongoose": "^8.7.2",
+    "nodemon": "^3.1.7"
   }
 }
